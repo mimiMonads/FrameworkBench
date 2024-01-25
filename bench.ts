@@ -65,20 +65,4 @@ export const bun_frameworks = [
 })();
 
 
-const wrap = (o:any) => (a=[] as {}[]) => ({
-    f: (f={}) => wrap(o)(a.concat({...f})),
-    size: ()=> void console.log(a.length) ?? wrap(o)(a),
-    names: ()=> void  a.forEach(x => console.log(x)) ?? wrap(o)(a),
-    copy: ()=> wrap(o)([...a]),
-    unwrap: () => [...a]
-})
-
-  
-wrap(1)()
-.f({a:1})
-.f({b:3})
-.copy()
-.names()
-.size()
-.unwrap()
   
