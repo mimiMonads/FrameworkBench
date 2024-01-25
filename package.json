@@ -1,0 +1,23 @@
+{
+  "name": "benchmark",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "make": "bun build.ts && bun bench.ts",
+    "makeTable": "bun build.ts",
+    "build": "bun build.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.5"
+  },
+  "dependencies": {
+    "@elysiajs/jwt": "^0.8.0",
+    "@types/bun": "^1.0.4",
+    "elysia": "^0.8.9",
+    "hono": "^3.12.6",
+    "vixeny": "^0.0.84"
+  }
+}
